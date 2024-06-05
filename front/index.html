@@ -9,17 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
 <body>
-    <header class="menu">
-        <h1>Brainy Bilby</h1>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="#" id="home-nav">🏠︎</a></li>
-                <li><a href="#aboutus" id="about-nav">About us</a></li>
-                <li><a href="#" id="courses-nav">Courses</a></li>
-                <li><a href="#freeres" id="res-nav">Free resources</a></li>
-                <li><a href="#" id="login-nav">Log in</a></li>
+    <header class="menu" id="menu">
+        <h1> <a href="#section-home">Brainy Bilby</a></h1>
+        <nav class="menu-nav" id="menu-nav">
+            <div class="menu-toggle">
+                <button class="menu-btn" id="menu-btn"><i class="bi bi-list" id="menu-icon"></i></button>
+            </div>
+            
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#section-home" id="home-nav">🏠︎</a></li>
+                <li><a href="#" id="about-nav">About us</a></li>
+                <li><a href="courses.html" id="courses-nav">Suscription</a></li>
+                <li><a href="#section-free-resources" id="res-nav">Free resources</a></li>
+                <li><a href="login.html" id="login-nav">Log in</a></li>
             </ul>
         </nav>
     </header>
@@ -27,21 +31,145 @@
         <div class="home">
             <div class="image-container">
                 <div class="contact">                    
-                    <h2>Your top mate for excelling in the <span>Augie vet Exam!</span></h2>
+                    <h2>Your top mate for excelling in the <br><span>Augie vet Exam!</span></h2>
                     <h3>Join our mailing list</h3>
-                    <input type="text" placeholder="Email" id="txtEmailListing">
-                    <input type="button" value="Suscribe" id="btnEmailListing">
+                    <input type="text" placeholder="Email" id="input-text" class="input-text">
+                    <input type="button" value="Suscribe" id="button-form" class="button-form">
                 </div>
             </div>
         </div>
-        <div id="aboutus" class="section">
-            <h2>Lorem ipsum <span>dolor</span>, sit amet consectetur adipisicing elit. <span>Officiis</span> quo suscipit maxime quaerat</h2>
+        <div id="section-home" class="section">
+            <h2>We are <span>Brainy Bilby</span> and Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem itaque exercitationem dignissimos similique ullam asperiores.</h2>
             <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum libero eius numquam repellat alias minus sit obcaecati quaerat mollitia quam?</p>
+                <p>Our courses are designed as such that help our students achieve their <span>maximum potential</span>. Our goal is to help all our students equally with constant <span>support and mentorship.</span></p>
             </div>
+            <h3>How will we help you?</h3>
+            <div class="grid">
+                <div class="grid-item" id="img-book"><h4>Guides</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem alias ea quisquam inventore porro delectus.</p></div>
+                <div class="grid-item" id="img-calendar"><h4>Organization</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem alias ea quisquam inventore porro delectus.</p></div>
+                <div class="grid-item"  id="img-meet"><h4>Meets</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem alias ea quisquam inventore porro delectus.</p></div>
+                <div class="grid-item"  id="img-result"><h4>Results</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem alias ea quisquam inventore porro delectus.</p></div>
+            </div>
+            <h3>What our students think about us?</h3>
+            <div class="grid opinion">
+                <div class="opinion-item" >
+                    <div class="text-opinion">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum consectetur provident, dignissimos minima dicta expedita"</p>
+                    </div>
+                    <div class="person-opinion">
+                        <img src="images/hombre-india.jpg" alt="usuario1" class="img-user">
+                        <h4>Jusseph Andoini</h4>
+                        <img src="images/india.png" alt="pais2">
+                    </div>
+                </div>
+                <div class="opinion-item" >
+                    <div class="text-opinion">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum consectetur provident, dignissimos minima dicta expedita"</p>
+                    </div>
+                    <div class="person-opinion">
+                        <img src="images/leon.jpg" alt="usuario2" class="img-user">
+                        <h4>Carlos Valdes</h4>
+                        <img src="images/argentina.png" alt="pais1">
+                    </div>
+                </div>
+                <div class="opinion-item" >
+                    <div class="text-opinion">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum consectetur provident, dignissimos minima dicta expedita"</p>
+                    </div>
+                    <div class="person-opinion">
+                        <img src="images/foto-mujer.jpg" alt="usuario3" class="img-user">
+                        <h4>Sofia Andrada</h4>
+                        <img src="images/argentina.png" alt="pais3">
+                    </div>
+                </div>
+                <div class="opinion-item" >
+                    <div class="text-opinion">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum consectetur provident, dignissimos minima dicta expedita"</p>
+                    </div>
+                    <div class="person-opinion">
+                        <img src="images/no-photo.jpg" alt="usuario4" class="img-user">
+                        <h4>Chris Thompson</h4>
+                        <img src="images/united-states.png" alt="pais4">
+                    </div>
+                </div>
+            </div>
+            <h3>What's next?</h3>
+            <div class="grid courses">
+                <div class="courses-info">
+                    <h2>Join us Today!</h2>
+                    <a href="courses.html"><input type="button" value="Suscribe now"></a>
+                </div>
+            </div>    
         </div>
-        <div id="freeres" class="section">
-            <h2>Lorem ipsum dolor, sit amet <span>consectetur</span> adipisicing elit. <span>Officiis</span> quo suscipit maxime quaerat</h2>
+        
+        <div id="section-free-resources" class="section">
+            <h3>Do you want to do it by yourself?</h3>
+            <h2>That's awesome! Here you have some <span>Information</span> that would help you in the process</h2>
+            <div class="resources">
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/cv.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>cv.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/cv.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+               <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+                <div class="resources-card" onclick="verPDF('files/flower.pdf')">
+                    <div class="pdf-preview">
+                        <img src="images/pdf.png" alt="PDF">
+                        <p>flower.pdf</p>
+                    </div>
+                    <i class="fa fa-download" aria-hidden="true" onclick="descargarPDF('files/flower.pdf')"></i>
+               </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -57,7 +185,7 @@
                 <ul>
                     <li href="#"><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li href="#"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li href="#"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li href="#"><a href="#"><i class="fab fa-envelope"></i></a></li>
                 </ul>
             </div>
        </div> 
@@ -65,5 +193,7 @@
             <p>© 2024 | Brainy Bilby</p>
        </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="smoothscroll.min.js"></script>
 </body>
 </html>

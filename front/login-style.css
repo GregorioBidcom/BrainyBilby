@@ -1,0 +1,108 @@
+:root{
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness) (matiz, saturacion, intensidad)*/
+    --span-blue: rgb(39, 87, 160);
+    --span-pink: rgb(226, 189, 162);
+}
+
+
+.container-login{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.register, .login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.register{
+    position: absolute;
+}
+
+.login{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.register.active, .login.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
+}
+
+.register.hidden, .login.hidden{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 70vh;
+    gap: 1rem;
+}
+
+
+.media-buttons button{
+    padding: 10px;
+    margin-inline: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.media-buttons button:hover{
+    background-color: var(--span-blue);
+    cursor: pointer;
+}
+
+.container-login a{
+    padding: 1px;
+    font-size: 0.7rem;
+    color: var(--span-blue);
+    cursor: pointer;
+}
+
+.container-login a:hover{
+    border-bottom: 1px solid var(--span-blue);
+}
+
+.container-login input{
+    padding: 10px;
+}
+
+.goLogin, .goRegister{
+    background-color: var(--span-blue);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    width: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.goLogin:hover, .goRegister:hover{
+    cursor: pointer;
+    background-color: rgba(39, 87, 160, 0.9);
+}
+
+.separator {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
